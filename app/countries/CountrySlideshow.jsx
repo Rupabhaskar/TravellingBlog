@@ -67,7 +67,7 @@ export default function CountrySlideshow({ countries }) {
 
   return (
     <div className="max-w-xl mx-auto p-6 bg-white shadow-md rounded-lg text-center transition-all">
-      <h1 className="text-3xl font-bold mb-6">🌍 Country Slideshow</h1>
+      <h1 className="text-3xl font-bold mb-6">Country Slideshow for Exploer</h1>
 
       <img
         src={country.flags.svg}
@@ -81,7 +81,7 @@ export default function CountrySlideshow({ countries }) {
       <p className="text-gray-600 mb-4">Population: {country.population.toLocaleString()}</p>
 
       {!stopped ? (
-        <p className="text-sm text-gray-400">Auto-rotating every 3 seconds</p>
+        <p className="text-sm text-gray-400">Auto-rotating every 0.5 seconds</p>
       ) : (
         <div className="mt-4">
           <p className="text-lg text-green-600 font-medium mb-2">
